@@ -542,30 +542,6 @@
         object-fit: cover;
       }
 
-      .gallery-filter {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 9px;
-        margin-top: 30px;
-      }
-
-      .filter-button {
-        border: 2px solid var(--ink);
-        border-radius: 999px;
-        background: var(--white);
-        padding: 9px 15px;
-        color: var(--ink);
-        font-family: inherit;
-        font-size: 10px;
-        font-weight: 900;
-        cursor: pointer;
-      }
-
-      .filter-button.is-active {
-        background: var(--ink);
-        color: var(--white);
-      }
-
       .gallery-grid {
         display: grid;
         grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -583,7 +559,7 @@
 
       .gallery-card img {
         width: 100%;
-        aspect-ratio: 0.8;
+        aspect-ratio: 3 / 4;
         object-fit: cover;
       }
 
@@ -1602,15 +1578,6 @@
           gap: 9px;
         }
 
-        .gallery-filter {
-          gap: 7px;
-        }
-
-        .filter-button {
-          padding: 8px 11px;
-          font-size: 9px;
-        }
-
         .review-grid,
         .review-capture-grid {
           grid-template-columns: 1fr;
@@ -1743,35 +1710,27 @@
             </div>
             <a class="button" href="#reservation">店舗を選んで相談 →</a>
           </div>
-          <div class="gallery-filter" aria-label="スタイル事例の絞り込み">
-            <button class="filter-button is-active" type="button" data-filter="all">すべて</button>
-            <button class="filter-button" type="button" data-filter="short">ショートから</button>
-            <button class="filter-button" type="button" data-filter="60">60本</button>
-            <button class="filter-button" type="button" data-filter="80">80本</button>
-            <button class="filter-button" type="button" data-filter="100">100本</button>
-            <button class="filter-button" type="button" data-filter="design">デザイン</button>
-          </div>
           <div class="gallery-grid" id="style-gallery">
-            <article class="gallery-card photo-slot has-photo" data-category="60"><img src="assets/lookbook/エクステ.jpeg" alt="シールエクステの仕上がりスタイル 01" loading="lazy" /></article>
-            <article class="gallery-card photo-slot has-photo" data-category="60"><img src="assets/lookbook/エクステ１.jpeg" alt="シールエクステの仕上がりスタイル 02" loading="lazy" /></article>
-            <article class="gallery-card photo-slot has-photo" data-category="60"><img src="assets/lookbook/エクステ５.jpeg" alt="シールエクステの仕上がりスタイル 03" loading="lazy" /></article>
-            <article class="gallery-card photo-slot has-photo" data-category="80 short"><img src="assets/lookbook/エクステ１０.jpeg" alt="シールエクステの仕上がりスタイル 04" loading="lazy" /></article>
-            <article class="gallery-card photo-slot has-photo" data-category="80"><img src="assets/lookbook/エクステ１１.jpeg" alt="シールエクステの仕上がりスタイル 05" loading="lazy" /></article>
-            <article class="gallery-card photo-slot has-photo" data-category="80"><img src="assets/lookbook/エクステ１４.jpeg" alt="シールエクステの仕上がりスタイル 06" loading="lazy" /></article>
-            <article class="gallery-card photo-slot has-photo" data-category="80 short"><img src="assets/lookbook/エクステ２０.jpeg" alt="シールエクステの仕上がりスタイル 07" loading="lazy" /></article>
-            <article class="gallery-card photo-slot has-photo" data-category="100 short"><img src="assets/lookbook/エクステ２２.jpeg" alt="シールエクステの仕上がりスタイル 08" loading="lazy" /></article>
-            <article class="gallery-card photo-slot has-photo" data-category="100 short"><img src="assets/lookbook/エクステ２５.jpeg" alt="シールエクステの仕上がりスタイル 09" loading="lazy" /></article>
-            <article class="gallery-card photo-slot has-photo" data-category="100"><img src="assets/lookbook/Naviエクステ写真素材１.jpeg" alt="シールエクステの仕上がりスタイル 10" loading="lazy" /></article>
-            <article class="gallery-card photo-slot has-photo" data-category="100 short"><img src="assets/lookbook/Naviエクステ写真素材２.jpeg" alt="シールエクステの仕上がりスタイル 11" loading="lazy" /></article>
-            <article class="gallery-card photo-slot has-photo" data-category="design"><img src="assets/lookbook/Naviエクステ写真素材１１.jpeg" alt="シールエクステの仕上がりスタイル 12" loading="lazy" /></article>
-            <article class="gallery-card photo-slot has-photo" data-category="design"><img src="assets/lookbook/Naviエクステ写真素材１８.jpeg" alt="シールエクステの仕上がりスタイル 13" loading="lazy" /></article>
-            <article class="gallery-card photo-slot has-photo" data-category="design"><img src="assets/lookbook/Naviエクステ写真素材２０.jpeg" alt="シールエクステの仕上がりスタイル 14" loading="lazy" /></article>
-            <article class="gallery-card photo-slot has-photo" data-category="design"><img src="assets/lookbook/Naviエクステ写真素材２２.jpeg" alt="シールエクステの仕上がりスタイル 15" loading="lazy" /></article>
-            <article class="gallery-card photo-slot has-photo" data-category="60"><img src="assets/lookbook/Naviエクステ写真素材２６.jpeg" alt="シールエクステの仕上がりスタイル 16" loading="lazy" /></article>
-            <article class="gallery-card photo-slot has-photo" data-category="80"><img src="assets/lookbook/Naviエクステ写真素材アフター３.jpeg" alt="シールエクステの仕上がりスタイル 17" loading="lazy" /></article>
-            <article class="gallery-card photo-slot has-photo" data-category="100"><img src="assets/lookbook/広坂エクステ１１.jpeg" alt="シールエクステの仕上がりスタイル 18" loading="lazy" /></article>
-            <article class="gallery-card photo-slot has-photo" data-category="design"><img src="assets/lookbook/広坂エクステ１４.jpeg" alt="シールエクステの仕上がりスタイル 19" loading="lazy" /></article>
-            <article class="gallery-card photo-slot has-photo" data-category="design"><img src="assets/lookbook/広坂エクステ１２.jpeg" alt="シールエクステの仕上がりスタイル 20" loading="lazy" /></article>
+            <article class="gallery-card photo-slot has-photo"><img src="assets/lookbook/style-01.jpg" alt="シールエクステの仕上がりスタイル 01" loading="lazy" /></article>
+            <article class="gallery-card photo-slot has-photo"><img src="assets/lookbook/style-02.jpg" alt="シールエクステの仕上がりスタイル 02" loading="lazy" /></article>
+            <article class="gallery-card photo-slot has-photo"><img src="assets/lookbook/style-03.jpg" alt="シールエクステの仕上がりスタイル 03" loading="lazy" /></article>
+            <article class="gallery-card photo-slot has-photo"><img src="assets/lookbook/style-04.jpg" alt="シールエクステの仕上がりスタイル 04" loading="lazy" /></article>
+            <article class="gallery-card photo-slot has-photo"><img src="assets/lookbook/style-05.jpg" alt="シールエクステの仕上がりスタイル 05" loading="lazy" /></article>
+            <article class="gallery-card photo-slot has-photo"><img src="assets/lookbook/style-06.jpg" alt="シールエクステの仕上がりスタイル 06" loading="lazy" /></article>
+            <article class="gallery-card photo-slot has-photo"><img src="assets/lookbook/style-07.jpg" alt="シールエクステの仕上がりスタイル 07" loading="lazy" /></article>
+            <article class="gallery-card photo-slot has-photo"><img src="assets/lookbook/style-08.jpg" alt="シールエクステの仕上がりスタイル 08" loading="lazy" /></article>
+            <article class="gallery-card photo-slot has-photo"><img src="assets/lookbook/style-09.jpg" alt="シールエクステの仕上がりスタイル 09" loading="lazy" /></article>
+            <article class="gallery-card photo-slot has-photo"><img src="assets/lookbook/style-10.jpg" alt="シールエクステの仕上がりスタイル 10" loading="lazy" /></article>
+            <article class="gallery-card photo-slot has-photo"><img src="assets/lookbook/style-11.jpg" alt="シールエクステの仕上がりスタイル 11" loading="lazy" /></article>
+            <article class="gallery-card photo-slot has-photo"><img src="assets/lookbook/style-12.jpg" alt="シールエクステの仕上がりスタイル 12" loading="lazy" /></article>
+            <article class="gallery-card photo-slot has-photo"><img src="assets/lookbook/style-13.jpg" alt="シールエクステの仕上がりスタイル 13" loading="lazy" /></article>
+            <article class="gallery-card photo-slot has-photo"><img src="assets/lookbook/style-14.jpg" alt="シールエクステの仕上がりスタイル 14" loading="lazy" /></article>
+            <article class="gallery-card photo-slot has-photo"><img src="assets/lookbook/style-15.jpg" alt="シールエクステの仕上がりスタイル 15" loading="lazy" /></article>
+            <article class="gallery-card photo-slot has-photo"><img src="assets/lookbook/style-16.jpg" alt="シールエクステの仕上がりスタイル 16" loading="lazy" /></article>
+            <article class="gallery-card photo-slot has-photo"><img src="assets/lookbook/style-17.jpg" alt="シールエクステの仕上がりスタイル 17" loading="lazy" /></article>
+            <article class="gallery-card photo-slot has-photo"><img src="assets/lookbook/style-18.jpg" alt="シールエクステの仕上がりスタイル 18" loading="lazy" /></article>
+            <article class="gallery-card photo-slot has-photo"><img src="assets/lookbook/style-19.jpg" alt="シールエクステの仕上がりスタイル 19" loading="lazy" /></article>
+            <article class="gallery-card photo-slot has-photo"><img src="assets/lookbook/style-20.jpg" alt="シールエクステの仕上がりスタイル 20" loading="lazy" /></article>
           </div>
           <p class="benefit-copy lookbook-event-benefit">特別な日を、なりたい自分で。</p>
           <div class="section-cta"><a class="button" href="#reservation">このスタイルにしたい・店舗を選ぶ →</a></div>
@@ -1964,20 +1923,6 @@
 
     <script>
       (function () {
-        var buttons = document.querySelectorAll("[data-filter]");
-        var cards = document.querySelectorAll("#style-gallery [data-category]");
-        buttons.forEach(function (button) {
-          button.addEventListener("click", function () {
-            var selected = button.getAttribute("data-filter");
-            buttons.forEach(function (item) { item.classList.remove("is-active"); });
-            button.classList.add("is-active");
-            cards.forEach(function (card) {
-              var categories = card.getAttribute("data-category").split(" ");
-              card.hidden = selected !== "all" && categories.indexOf(selected) === -1;
-            });
-          });
-        });
-
         var mobileCta = document.querySelector(".mobile-cta");
         function updateMobileCta() {
           if (!mobileCta) return;
